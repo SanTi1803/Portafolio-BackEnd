@@ -16,6 +16,7 @@ public class dtoPersona {
     @NotBlank
     private String img;
 
+    
     public dtoPersona() {
     }
 
