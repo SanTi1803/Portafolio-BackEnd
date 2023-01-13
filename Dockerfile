@@ -4,7 +4,8 @@
 
 FROM amazoncorretto:19-alpine-jdk
 
-COPY target/SRM-0.0.1-SNAPSHOT.jar app.jar
+MAINTAINER SRM
 
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+COPY target/SRM-0.0.1-SNAPSHOT.jar  srm-app.jar
 
+ENTRYPOINT ["java","-jar","/srm-app.jar"]
